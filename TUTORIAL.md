@@ -380,7 +380,7 @@ npm run start
 
 Standard is not an actual standard, it's just called that. I personally like its linting rules. One notable thing about this linter is that it forbids semicolons unless required.
 
-If you want to use a different linter, you can uninstall standard and set up ESLint instead. Such packages are for development, so they should be in `devDependencies`.
+If you want to use a different linter, you can uninstall Standard and set up ESLint instead. Such packages are for development, so they should be in `devDependencies`.
 
 # 9. Testing using `rest.http`
 The structure of this file can look like this:
