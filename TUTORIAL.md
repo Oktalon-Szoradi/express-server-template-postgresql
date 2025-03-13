@@ -429,7 +429,7 @@ Content-Type: application/json
 
 ---
 
-**Careful!** When writing a request that has a request body, the key-value pairs must be separated by commas and **must not have a trailinbg comma**. For example, the following is **INCORRECT**:
+**Careful!** When writing a request that has a request body, the key-value pairs must be separated by commas and **must not have a trailing comma**. For example, the following is **INCORRECT**:
 ```http
 PATCH http://localhost:3000/myRoute/0
 Content-Type: application/json
