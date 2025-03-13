@@ -343,7 +343,8 @@ export const updateStuffDb = async (id, myColumn, myOtherColumn) => {
   return result.rows[0]
 }
 ```
-The order of the parameters after the keyword `async` (function definition) should match what you write in the Controller.
+**Minor Heads Up:** The order of the parameters after the keyword `async` (function definition) should match what you write in the Controller.
+E.g., if you write `model.updateStuffDb(id, myColumn, myOtherColumn)` in the Controller, then this function should accept these parameters in that order. An example of a mistake would be to write `model.updateStuffDb(myColumn, myOtherColumn, id)` in the Controller, as this is not how `updateStuffDb` is actually defined.
 
 For the prepared statement, you should count in order (`$1 $2 $3` instead of `$2 $3 $1`) and the following array should also be in that order.
 
