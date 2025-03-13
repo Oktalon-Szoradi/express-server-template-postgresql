@@ -239,7 +239,7 @@ You can access the request body from `req.body`. These can be different variable
 
 Path parameters were explained above.  
 Query parameters are extra things that can be added to any URL. They come after a `?`, use the `key=value` syntax, and are separated by `&`.  
-The request body is used to transfer data and is wrapped in `{}` in the `rest.http` example below you. This is where you should send data, sensitive too. HTTPS connections encrypt this.
+The request body is used to transfer data and is wrapped in `{}` in the `rest.http` example below. This is where you should send data, sensitive too. HTTPS connections encrypt this.
 
 ```http
 PATCH http://localhost:3000/myRoute/123?queryParameter=something&another=else
