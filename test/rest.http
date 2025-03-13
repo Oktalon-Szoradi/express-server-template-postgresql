@@ -1,0 +1,23 @@
+@baseURL = http://localhost:3000
+
+GET {{baseURL}}/test
+###
+GET {{baseURL}}/myRoute
+###
+POST {{baseURL}}/myRoute
+Content-Type: application/json
+
+{
+  "myColumn": "myValue"
+}
+###
+PATCH {{baseURL}}/myRoute/0
+Content-Type: application/json
+
+{
+  "myColumn": "myNewValue",
+  "myOtherColumn": 1
+}
+###
+DELETE {{baseURL}}/myRoute/0
+###

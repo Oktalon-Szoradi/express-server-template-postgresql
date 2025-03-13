@@ -1,0 +1,34 @@
+{
+  "name": "express-server-template",
+  "version": "0.0.0",
+  "description": "A server/backend template using [Express](https://expressjs.com/)",
+  "homepage": "https://github.com/Oktalon-Szoradi/express-server-template#readme",
+  "bugs": {
+    "url": "https://github.com/Oktalon-Szoradi/express-server-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oktalon-Szoradi/express-server-template.git"
+  },
+  "license": "Unlicense",
+  "author": "Talon",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "lint": "standard . --ext .js --fix",
+    "start": "node ./src/app.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "standard": "^17.1.2"
+  }
+}
